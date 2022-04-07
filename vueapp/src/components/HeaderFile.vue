@@ -1,7 +1,9 @@
 <template>
     <div v-if="true" class="head" >
-        <p> Wallet </p>
+       
+        
         <img id="photo" src="../assets/logo.png" alt="User image">
+        
     </div>
     
     
@@ -11,7 +13,8 @@
 
 export default {
 
-    name : 'HeaderFile'
+    name : 'HeaderFile',
+    props:['credit','debit','ToggleAdd','ToggleNotesSearch','ToggleUserSearch']
 }
 </script>
 
@@ -29,6 +32,7 @@ export default {
         left:1300px;
         border:2px solid black;
         margin-top:0;
+        display:flex;
 
     }
     p{
